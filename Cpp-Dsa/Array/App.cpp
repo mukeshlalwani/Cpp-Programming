@@ -10,11 +10,12 @@ using namespace std;
 //     ptr[0] = 1000;
 // }
 
-void printArray(int arr[]) {
-    int n = sizeof(arr) / sizeof(int);
+void printArray(int nums[], int n) {
+    // cout << sizeof(nums) << endl;
+    // int n = sizeof(nums) / sizeof(int);
 
     for(int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
+        cout << nums[i] << " ";
     }
     cout << endl;
 }
@@ -30,7 +31,7 @@ int main(int argc, char const *argv[])
     // func(arr); //passing array name is eq. to passing the pointer
     // cout << arr[0] << endl;
 
-    printArray(arr);
+    printArray(arr, n);
     return 0;
 }
  
